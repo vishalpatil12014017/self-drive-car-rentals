@@ -111,17 +111,6 @@
 
      
 
-    // var count = 0;
-    // setInterval(function(){
-    //     slides1.style.display = "hidden"
-    //     slides2.style.display = "hidden"
-    //     slides3.style.display = "hidden"
-    //     slides_arr[count].style.display = "visible"
-    //     count++;
-    //     if(count == 2){
-    //         count = 0
-    //     }
-    // }, 2000)
     var time = 2000;
     var i = 0;
     function changeImg(){
@@ -139,6 +128,14 @@
                             setTimeout("changeImg()", time);
                     }
     window.onload=changeImg;
+
+    document.getElementById('signup').addEventListener('click', function(){
+        document.getElementById("main").style.display = "flex"
+    })
+
+    document.querySelector(".close").addEventListener("click", function(){
+        document.getElementById("main").style.display = "none"
+    })
 
 
     
