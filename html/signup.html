@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+
+        body  {
+            font-family: "Open Sans",-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif!important;
+        }
+
+
+       
+        #main {
+            max-width: 70%;
+            width: 100%;
+            min-height: 500px;
+            padding: 20px;
+            background-color:#EEEEEE;
+            border-radius: 8px;
+            margin: 50px auto;
+            display: flex;
+            flex-direction: row;
+            color: #33414f;
+            position: relative;
+            overflow: hidden;
+        }
+        .left_cont {
+            box-shadow: 0 0 10px 2px rgb(0 0 0 .10);
+            width: 45%;
+            border-radius: 10px;
+            position: relative;
+            z-index: 1;
+            background: #fff;
+        }
+        .promo {
+            height: 500px;
+            padding: 35px;
+            text-align: center;
+            font-size: 16px;
+           
+            display: flex;
+           
+            flex-direction: column;
+           
+            align-items: center;
+           
+            justify-content: center;
+        }
+
+        img {
+            width: 50%;
+        }
+
+
+        /* h1 p {
+            font-family: "Open Sans",-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif!important;
+        }  */
+        
+       
+
+        /* .promo1 {
+            display: none;
+        }
+        .promo2 {
+            display: none;
+        }
+        .promo3 {
+            display: none;
+        } */
+    </style>
+</head>
+<body>
+    <div>
+        <div id="main">
+            <div class="left_cont">
+                <div class="promo">
+                    <div class="promo1">
+                        <img src="https://www.zoomcar.com/build/img/promo-1.1a6e5812962b16014f7311ed801fbf71.png" alt="zoom1">
+                        <h1>REFER & EARN</h1>
+                        <p>Refer or invite your friends to zoomcar and earn free rides, free Z points and more.</p>
+                    </div>
+                    <div class="promo2">
+                        <img src="https://www.zoomcar.com/build/img/promo_supermiler.7a597371bd16587f1d46a66dbff6b72e.svg" alt="zoom2">
+                        <h1>SUPERMILER CLUB</h1>
+                        <p>Premium club which rewards you everytime you drive with us.</p>
+                    </div>
+                    <div class="promo3">
+                        <img src="https://www.zoomcar.com/build/img/promo-3.f243fadd09ecdd1d9cb70694fa1be058.png" alt="zoom3">
+                        <h1>FREE FUEL</h1>
+                        <p>The fuel is on us for your complete trip.In case you re-fuel a zoomcar, we will re-fill your pockets and that’s a promise.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
+<script>
+    var slides1 = document.querySelector('.promo1')
+    var slides2 = document.querySelector('.promo2')
+    var slides3 = document.querySelector('.promo3')
+    // console.log(slides3);
+
+    var slides_arr = [slides1, slides2, slides3]
+    // // console.log(slides_arr);
+
+     
+
+    // var count = 0;
+    // setInterval(function(){
+    //     slides1.style.display = "hidden"
+    //     slides2.style.display = "hidden"
+    //     slides3.style.display = "hidden"
+    //     slides_arr[count].style.display = "visible"
+    //     count++;
+    //     if(count == 2){
+    //         count = 0
+    //     }
+    // }, 2000)
+    var time = 2000;
+    var i = 0;
+    function changeImg(){
+        slides3.style.display = "none"
+     slides1.style.display = "none"
+     slides2.style.display = "none"
+     
+      
+                            slides_arr[i].style.display = "block"
+                            if(i < slides_arr.length - 1){
+                            i++; 
+                            } else { 
+                                i = 0;
+                            }
+                            setTimeout("changeImg()", time);
+                    }
+    window.onload=changeImg;
+
+
+    
+</script>
+
+
