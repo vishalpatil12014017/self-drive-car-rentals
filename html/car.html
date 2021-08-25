@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>car</title>
+    <style>
+        body{
+            background-color: rgb(239,239,239);
+            margin: 0px;
+        }
+        #main{
+            display: grid;
+            grid-template-columns: 24% 76%;
+        }
+        #main div{
+            margin: none;
+        }
+        /* .left_coloum{
+           
+        } */
+        .right_coloum{
+          
+            background-color: rgb(247,247,247);
+        }
+        .title{
+            background-color:rgb(228,241,220);
+            text-align: center;
+            padding: 15px;
+            font-size: 16px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #e4f1dc;
+            color: rgb(238,90,87);
+        }
+        h2{
+           margin: 0px;
+        }
+        .sort_bar{
+          background-color: #e6e6e6;
+          padding: 10px 20px;
+        }
+        .sort_bar .item {
+          display: inline-block;
+          border-radius: 2px;
+          background-color: #fff;
+          border: 1px solid #d8d8d8;
+          padding: 3px 10px;
+          font-size: 11px;
+          color: #9b9b9b;
+          margin-left: 10px;
+          cursor: pointer;
+          position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="left_coloum">2</div>
+        <div class="right_coloum">
+            <div class="title">
+                <h2><svg xmlns="http://www.w3.org/2000/svg" width="12" height="19" viewBox="0 0 12 19"><path fill=" rgb(238,90,87)" fill-rule="nonzero" d="M11.908 7.688a.753.753 0 0 0-.658-.38H7.579L8.246.804a.73.73 0 0 0-.5-.763.762.762 0 0 0-.877.294L.119 10.566a.714.714 0 0 0-.027.745.753.753 0 0 0 .658.381h3.671l-.667 6.505a.73.73 0 0 0 .5.762.755.755 0 0 0 .878-.295l6.75-10.23a.715.715 0 0 0 .026-.746z" </path></svg>
+                    Book Early, Book Cheaper!
+                </h2>
+            </div>
+           <div class="sort_bar">
+            <label>Sort by:</label>
+            <div class="item"> Price: High to Low </div>
+            <div class="item"> Price: Low to High </div>
+            <div class="item active-input"> Distance </div>
+           </div>
+        </div>  
+    </div>
+
+    <script>
+        
+    </script>
+    
+</body>
+</html>
