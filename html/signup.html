@@ -5,30 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600">
     <style>
 
-        body  {
+        body * {
             font-family: "Open Sans",-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif!important;
         }
 
+        #nav{
+            
+        height: 80px;
+        }
+        #nav div {
+        background-color: rgb(245, 169, 115);
+        height: 35px;
+        width: 100px;
+        float: right;
+        margin: 10px;
+        font-size: 20px;
+        font-weight: 800;
+        text-align: center;
+        border-radius: 5px;
+        padding: 5px;
+        } 
 
+        .cont {
+            width: 100%;
+            height: 100%;;
+            position: absolute;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: none;
+        } 
        
         #main {
             max-width: 70%;
             width: 100%;
-            min-height: 500px;
-            padding: 20px;
+            min-height: 400px;
+            padding: 30px;
             background-color:#EEEEEE;
             border-radius: 8px;
-            margin: 50px auto;
+            margin: auto;
             display: flex;
             flex-direction: row;
             color: #33414f;
             position: relative;
             overflow: hidden;
+            /* display: none; */
+            
         }
         .left_cont {
-            box-shadow: 0 0 10px 2px rgb(0 0 0 .10);
+            box-shadow: 0 0 1px 2px #c4c2c2;
             width: 45%;
             border-radius: 10px;
             position: relative;
@@ -36,7 +66,7 @@
             background: #fff;
         }
         .promo {
-            height: 500px;
+            height: 400px;
             padding: 35px;
             text-align: center;
             font-size: 16px;
@@ -49,32 +79,76 @@
            
             justify-content: center;
         }
+      
+        .close {
+            position: absolute;
+            top: 0;
+            right: 10px;
+            font-size: 30px;
+            transform: rotate(45deg);
+            cursor: pointer;
+        }
+        .right_cont {
+            
+            width: 55%;
+            padding: 20px;
+            text-align: center;
 
-        img {
-            width: 50%;
+        }
+        .right_cont p {
+            font-weight: 600;
+        }
+        .facebook {
+            width: 65%;
+            height: 30px;
+            margin: auto;
+            padding: 10px;
+            background-color: #4267B2;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 1px 2px #e0dfdf;
+        }
+        .google {
+            width: 65%;
+            height: 30px;
+            margin: auto;
+            padding: 10px;
+            background-color: #f4425a;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 1px 2px #e0dfdf;
+        }
+        input {
+            width: 67%;
+            height: 30px;
+            border-radius: 3px;
+            margin-top: 50px;
+            border: 1px solid black; 
+        }
+
+        #next {
+            margin-top: 30px;
+            cursor: pointer;
         }
 
 
-        /* h1 p {
-            font-family: "Open Sans",-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif!important;
-        }  */
-        
-       
 
-        /* .promo1 {
-            display: none;
-        }
-        .promo2 {
-            display: none;
-        }
-        .promo3 {
-            display: none;
-        } */
     </style>
 </head>
 <body>
-    <div>
+    <div id="nav">
+        <div id="signup">Signup</div>
+        <div>Login</div>
+        <div>home</div>
+    </div>
+
+    <div class="cont" >
         <div id="main">
+            <div class="close">+</div>
             <div class="left_cont">
                 <div class="promo">
                     <div class="promo1">
@@ -94,6 +168,19 @@
                     </div>
                 </div>
             </div>
+            <div class="right_cont">
+                <div>
+                <img src="https://www.zoomcar.com/build/img/zoom-logo-color.e3ec2e4b625f1a06ddb9a6ac765abb19.png" alt="logo">
+                <p>Continue with</p>
+                <div class="facebook">Facebook</div>
+                <div class="google">Google</div>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Enter your Email or Mobile number">
+                </form>
+                <img src="https://www.zoomcar.com/build/img/next-icon.5aaa7a34fca1e56685dfc1041338b9a2.svg" alt="next" id="next">    
+
+            </div>
 
         </div>
 
@@ -104,11 +191,9 @@
     var slides1 = document.querySelector('.promo1')
     var slides2 = document.querySelector('.promo2')
     var slides3 = document.querySelector('.promo3')
-    // console.log(slides3);
-
+   
     var slides_arr = [slides1, slides2, slides3]
-    // // console.log(slides_arr);
-
+  
      
 
     var time = 2000;
@@ -130,11 +215,11 @@
     window.onload=changeImg;
 
     document.getElementById('signup').addEventListener('click', function(){
-        document.getElementById("main").style.display = "flex"
+        document.querySelector('.cont').style.display = "flex"
     })
 
     document.querySelector(".close").addEventListener("click", function(){
-        document.getElementById("main").style.display = "none"
+        document.querySelector('.cont').style.display = "none"
     })
 
 
