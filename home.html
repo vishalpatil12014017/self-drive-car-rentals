@@ -170,6 +170,54 @@
             border: none;
         }
         
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        /* Dropdown button */
+        
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            /* Important for vertical align on mobile phones */
+            margin: 0;
+            /* Important for vertical align on mobile phones */
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        /* Links inside the dropdown */
+        
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        /* Add a grey background color to dropdown links on hover */
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        /* Show the dropdown menu on hover */
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
         body {
             font-family: "arial";
         }
@@ -179,19 +227,31 @@
 <body>
     <!--NAV BAR Start-->
     <div id="nav">
+
         <img src="https://www.zoomcar.com/build/img/logo.f0c7a9744cfeb3fb5c90eafda61dd2ce.svg" style="height: 80%;width: 10%;">
 
 
-
         <div class="float-r">
+
             <a href="login.html">LOGIN</a>
+
         </div>
         <div class=" float-r ">
             <a href="login.html">SIGNUP</a>
         </div>
-        <div class="float-r ">
-            <a href="login.html">MOBILE APP</a>
+        <div class=" float-r" style="height: 0px;margin-top: 0px;">
+            <div class="dropbtn float-r dropdown" style="font-size: 20px; background-color: transparent;margin-top: 0px;">MOBILE APP
 
+                <!-- <i class="fa fa-caret-down"></i>-->
+
+                <div class="dropdown-content">
+                    <a href="https://play.google.com/store/apps/details?id=com.zoomcar&referrer=utm_source%3Dhome%2520page%26utm_medium%3Dheader%2520links%26utm_content%3Dandroid%26utm_campaign%3Dinstalls"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJj8LuevwdQYk2S3w1B3EeDskXk7LvtcHOkzlQQnWO3NMDX6qwH7bCnGHqCR_t_aFmtw&usqp=CAU" style="height: 35px;width: 90%;"></a>
+                    <a href="https://itunes.apple.com/us/app/zoomcar-self-drive-cars/id889910218?mt=8&utm_source=home%20page&utm_medium=header%20links&utm_content=iOS&utm_campaign=installs">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwAFKoUEGpPjP79LPi6r9bFfem3GIOQawWVV75SkXyBwevJd183Bvw_wI9duOdX5rTccU&usqp=CAU" style="height: 35px;width: 100%;">
+                    </a>
+
+                </div>
+            </div>
         </div>
         <div class="float-r ">
             <a href="login.html">ZMS</a>
