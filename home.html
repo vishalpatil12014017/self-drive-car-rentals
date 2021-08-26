@@ -29,6 +29,10 @@
             text-decoration: none;
         }
         
+        a:active {
+            color: green;
+        }
+        
         a {
             color: white;
         }
@@ -66,6 +70,18 @@
             color: rgb(41, 38, 38);
         }
         
+        #slide {
+            background-image: url(https://www.zoomcar.com/build/img/testimonial_bg.499d1dd2876b931e9cf0509e3d1884f5.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width: 100%;
+            height: 500px;
+            margin: 0% 0%;
+            margin-left: -2%;
+            padding: 2%;
+            color: white;
+        }
+        
         #info {
             background-color: rgb(201, 198, 198);
             align-items: center;
@@ -82,21 +98,45 @@
             text-align: center;
             margin: 0% 0%;
             padding: 2%;
-            height: 500px;
+            height: 340px;
             width: 97%;
         }
         
         #work>.size {
-            height: 100px;
+            height: 150px;
             width: 200px;
         }
         
         #work>.flex>div {
             width: 20%;
             align-items: center;
-            height: 100px;
+            height: 150px;
             margin: 1%;
-            margin-left: 7%;
+            margin-left: 3%;
+        }
+        
+        #users {
+            background-color: white;
+            align-items: center;
+            text-align: center;
+            margin: 0% 0%;
+            margin-top: 4%;
+            margin-left: -2%;
+            padding: 2%;
+            height: 250px;
+            width: 100%;
+        }
+        
+        #footers {
+            background-color: rgb(41, 43, 61);
+            align-items: center;
+            text-align: center;
+            margin: 0% 0%;
+            padding: 2%;
+            height: 100px;
+            margin-left: -2%;
+            width: 100%;
+            color: white;
         }
         
         .flex {
@@ -116,6 +156,20 @@
             width: 100px;
         }
         
+        button {
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .dropbtn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+        
         body {
             font-family: "arial";
         }
@@ -123,6 +177,7 @@
 </head>
 
 <body>
+    <!--NAV BAR Start-->
     <div id="nav">
         <img src="https://www.zoomcar.com/build/img/logo.f0c7a9744cfeb3fb5c90eafda61dd2ce.svg" style="height: 80%;width: 10%;">
 
@@ -136,6 +191,7 @@
         </div>
         <div class="float-r ">
             <a href="login.html">MOBILE APP</a>
+
         </div>
         <div class="float-r ">
             <a href="login.html">ZMS</a>
@@ -147,12 +203,13 @@
             <a href="login.html">SUBSCRIPTION</a>
         </div>
         <div class="float-r ">
-            <a href="login.html">OFFERS</a>
+            <a href="offer.html">OFFERS</a>
         </div>
 
     </div>
-
+    <!--NAV BAR END-->
     <div id="main-cont">
+        <!--Main Cont Start-->
         <div class="intro">
             <p style="font-size: 45px;">DRIVE IN SANITIZED ZOOMCAR</p>
             <p style="font-size: 20px;">Self Drive Car Rental in <label for="city">    </label>
@@ -198,19 +255,20 @@
             </p>
 
             <div>
-                <a href="login.html"></a>
-                <div style="background-color: white;border: 1px solid rgb(44, 43, 43);border-radius: 6px; height: 50px;width: 400px;color: rgb(49, 45, 45);align-items: center;margin-left:30%;font-size: 20px;display: flex;">
+                <a href="login.html">
+                    <div style="background-color: white;border: 1px solid rgb(44, 43, 43);border-radius: 6px; height: 50px;width: 400px;color: rgb(49, 45, 45);align-items: center;margin-left:30%;font-size: 20px;display: flex;">
 
-                    <p style="margin-left: 8%;">Start your wonderful journey</p>
-                    <p style="margin-left: 18%;font-size: 25px;color: rgb(32, 30, 30);">></p>
-                </div>
+                        <p style="margin-left: 8%;">Start your wonderful journey</p>
+                        <p style="margin-left: 18%;font-size: 25px;color: rgb(32, 30, 30);">></p>
+                    </div>
                 </a>
             </div>
 
         </div>
-
+        <!--Main Cont End-->
     </div>
     <div id="info">
+        <!--ZOOMCAR ADVANTAGE Start-->
         <p style="font-size: 25px;color: rgb(61, 56, 56);">THE ZOOMCAR ADVANTAGE</p>
         <p style="color: rgb(61, 56, 56);">We simplified car rentals, so you can focus on what's important to you. </p>
         <div class="flex">
@@ -253,40 +311,174 @@
             </div>
 
         </div>
+        <!--ZOOMCAR ADVANTAGE END-->
     </div>
+
     <div id="work">
+        <!--ZOOMCAR WORK DESCRIPTION Start-->
         <p style="font-size: 25px;color: rgb(61, 56, 56);">HOW ZOOMCAR WORKS</p>
         <p style="color: rgb(61, 56, 56);">Drive yourself to an adventure and back in 5 simple steps </p>
         <div class="flex">
             <div style="height: 50%;width: 50%;background-color: white;" class="size">
                 <img src="https://www.zoomcar.com/build/img/book.f804056bb2429eeabf95836bdf8865e1.svg" style="height: 50px;width: 50px;margin-top: 3%;">
-                <h3 style="font-size: 20px; ">BOOK</h3>
+                <p style="font-size: 14px; ">BOOK</p>
                 <p style="margin: 1%;text-align: center;">Search for and book a car on our site!</p>
             </div>
             <div style="height: 50%;width:50%;            background-color: white;" class="size">
                 <img src="https://www.zoomcar.com/build/img/dl.99966c7703663379725f13d45663b372.svg" style="height: 50px;width: 50px; margin-top: 3%;">
-                <h3 style="font-size: 20px; ">UPLOAD LICENSE</h3>
+                <p style="font-size: 14px; ">UPLOAD LICENSE</p>
                 <p style="margin: 1%;text-align: center;">Upload your driver’s license, and pay a small security deposit.</p>
             </div>
             <div style="height: 50%;width: 50%;background-color: white;" class="size">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4eaA6vNcTIdPiWfJ84AmoFfZfOUBusFGHYA&usqp=CAU" style="height: 50px;width: 50px; margin-top: 3%;">
-                <h3 style="font-size: 20px; ">UNLOCK</h3>
+                <p style="font-size: 14px; ">UNLOCK</p>
                 <p style="margin: 1%;text-align: center;">We SMS your car details 20 minutes before pickup. Unlock it via the Zoomcar app.</p>
             </div>
             <div style="height: 50%;width: 50%;            background-color: white;" class="size">
                 <img src="https://www.zoomcar.com/build/img/zoom.db4f328f3f4b83596bb3f2aefd04a864.svg" style="height: 50px;width: 50px; margin-top: 3%;">
-                <h3 style="font-size: 20px; ">ZOOM</h3>
+                <p style="font-size: 14px; ">ZOOM</p>
                 <p style="margin: 1%;text-align: center;">Fill the start checklist in the Zoomcar app. Grab the keys from the glove-box and drive.</p>
             </div>
             <div style="height: 50%;width: 50%;            background-color: white;" class="size">
                 <img src="https://www.zoomcar.com/build/img/return.c50e35f6ae4b2891e95c121082d968f0.svg" style="height: 50px;width: 50px; margin-top: 3%;">
-                <h3 style="font-size: 20px; ">RETURN</h3>
+                <p style="font-size: 14px; ">RETURN</p>
                 <p style="margin: 1%;text-align: center;">Return the car to the same location and fill the end checklist to end your trip.</p>
             </div>
         </div>
-    </div>
-</body>
+        <!--ZOOMCAR WORK DESCRIPTION END-->
 
-</html>
+
+
+        <!--ZOOMCAR Details start-->
+        <div id="users">
+            <!--ZOOMCAR WORK DESCRIPTION Start-->
+
+            <div class="flex">
+                <div style="height:70%;width: 50%;background-color: white;" class="size">
+                    <img src="https://www.zoomcar.com/build/img/steering-wheel.121c23ffa50aa2da7a1e1f829048dd90.svg" style="height: 120px;width: 70px;margin-top: 3%;">
+                    <h3 style="font-size: 20px; ">3,000+</h3>
+                    <p style="margin: 1%;text-align: center;">Rides Daily</p>
+                </div>
+                <div style="height: 70%;width:50%;            background-color: white;" class="size">
+                    <img src="https://www.zoomcar.com/build/img/happy.c650409b5435456374eca19943b697f0.svg" style="height: 120px;width: 70px; margin-top: 3%;">
+                    <h3 style="font-size: 20px; ">48,00,000+</h3>
+                    <p style="margin: 1%;text-align: center;">Happy Users</p>
+                </div>
+                <div style="height: 70%;width: 50%;background-color: white;" class="size">
+                    <img src="https://www.zoomcar.com/build/img/kms.4dc69060e383492afc70514e93ca766c.svg" style="height: 120px;width: 70px; margin-top: 3%;">
+                    <h3 style="font-size: 20px; ">36,00,00,000+</h3>
+                    <p style="margin: 1%;text-align: center;">Km Travelled (enough for 470 round trips to the moon!)</p>
+                </div>
+                <div style="height: 70%;width: 50%;            background-color: white;" class="size">
+                    <img src="https://www.zoomcar.com/build/img/cars.fcc55acb001edaad3d14055517a1e1b4.svg" style="height: 120px;width:70px; margin-top: 3%;">
+                    <h3 style="font-size: 20px; ">6,500+</h3>
+                    <p style="margin: 1%;text-align: center;">Number of Zoomcars</p>
+                </div>
+                <div style="height: 70%;width: 50%;            background-color: white;" class="size">
+                    <img src="https://www.zoomcar.com/build/img/star_rating.5999c91406d9adad8f35df39ef055ec5.svg" style="height: 120px;width: 70px; margin-top: 3%;">
+                    <h3 style="font-size: 20px; ">Rating 4.7/5.0</h3>
+                    <p style="margin: 1%;text-align: center;">Rated by 3,00,000+ customers over 10,00,000+ bookings</p>
+                </div>
+            </div>
+
+
+        </div>
+        <!--ZOOMCAR WORK DESCRIPTION End-->
+        <!--Zoomcar sliding review start-->
+        <div id="slide">
+            <div style="align-items: center;margin-left: 600px;height:40px;width: 50px;margin-top: 25px;margin-bottom: 1px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMkO4p2w-6Y1wXgtIgdJGP6vIMhjlGLg9heQ&usqp=CAU" style="width: 100px;height: 100px;"> </div>
+            <div style="display: flex;margin-top: 0px;">
+                <button style="font-size: 100px;width: 15%;margin: 10%;background-color: transparent;color: white;" onclick="prev()">
+            < </button>
+                <div style="font-size: 25px;width: 100%;margin: 10%;text-align: center;">
+                    <p id="p">Select your car. Pay. Drive. Return. The zoomcar booking process is as simple as this. Butter cannot be smoother than this.
+                    </p>
+                    <p style="color: green;" id="p_name">- Diptarko C
+                    </p>
+                </div>
+                <button style="font-size: 100px;width: 25%;margin: 10%;background-color: transparent;color: white;" onclick="next()">>
+                </button>
+            </div>
+        </div>
+        <!--Zoomcar sliding review End-->
+        <div id="footers">
+            <!--ZOOMCAR footers Start-->
+
+            <div class="flex">
+                <div style="height: 50%;width: 50%;" class="size">
+                    <img src="https://www.zoomcar.com/build/img/zc-works.2adcbe18edb84c7c1fdf0c8d6c894f8b.svg" style="height: 50px;width: 50px;margin-top: 3%;">
+
+                    <p style="margin: 1%;text-align: center;font-size: 20px;">How Zoomcars works?</p>
+                </div>
+                <div style="height: 50%;width:50%;           " class="size">
+                    <img src="https://www.zoomcar.com/build/img/policies.ceddb15a4eef16af85ba8666b1522741.svg" style="height: 50px;width: 50px; margin-top: 3%;">
+
+                    <p style="margin: 1%;text-align: center;font-size: 20px;">Policies</p>
+                </div>
+                <div style="height: 50%;width: 50%;" class="size">
+                    <img src="https://www.zoomcar.com/build/img/help-support.acf244c0683e201bd2d978f1ddc5d33d.svg" style="height: 50px;width: 50px; margin-top: 3%;">
+
+                    <p style="margin: 1%;text-align: center;font-size: 20px;">Help-Support</p>
+                </div>
+                <div style="height: 50%;width: 50%;" class="size">
+                    <img src="https://www.zoomcar.com/build/img/safety.127607759cd86e3d75f5698a641d5b83.svg" style="height: 50px;width: 50px; margin-top: 3%;">
+
+                    <p style="margin: 1%;text-align: center;font-size: 20px;">Zoom in Safety</p>
+                </div>
+
+            </div>
+
+
+        </div>
+        <!--ZOOMCAR footers End-->
+        <script>
+            var msg_arr = ["At the outset, let me thank you for introducing Zoomcar in Bangalore and for giving me an opportunity to use your service. Your customer support was impeccable and vehicle was well-maintained and top-notch.", "I just wanted to let you know that I really appreciate the efforts you are making personally, to ensure that the customer is satisfied... I really hope you carry forward this culture and make a model for other companies.", "You certainly do have a very regular customer here... Must say, Greg went that extra mile... You have a great journey together!", "It was great pleasure use zoom service, As all process being online it was really hassle free experience. good service please keep it going."];
+            var msg_name = ["- D. Samuel", "- Yekula Santosh", "- Sunil Rastogi", "- Rohit R"];
+            var i = 0;
+
+            if (i == msg_arr.length - 1) {
+                i = 0;
+            }
+
+            function next() {
+                let p_msg = document.getElementById("p");
+                let p_na = document.getElementById("p_name");
+
+
+                console.log(p_msg, p_na, i);
+                p_msg.innerText = ""
+                p_msg.innerText = msg_arr[i++];
+                i--;
+
+
+
+                p_na.innerText = ""
+                p_na.innerText = msg_name[i++];
+
+
+
+            }
+
+            function prev() {
+
+                let p_msg = document.getElementById("p");
+                let p_na = document.getElementById("p_name");
+
+
+                console.log(msg_arr, p_na);
+                p_msg.innerText = ""
+                p_msg.innerText = msg_arr[i--];
+
+                i++;
+
+                p_na.innerText = ""
+                p_na.innerText = msg_name[i--];
+
+                console.log(p_msg, p_na, i);
+
+            }
+        </script>
+</body>
 
 </html>
