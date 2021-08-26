@@ -135,6 +135,7 @@
             padding: 2%;
             height: 100px;
             margin-left: -2%;
+            margin-top: 1px;
             width: 100%;
             color: white;
         }
@@ -449,7 +450,7 @@
             <div style="align-items: center;margin-left: 600px;height:40px;width: 50px;margin-top: 25px;margin-bottom: 1px;">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMkO4p2w-6Y1wXgtIgdJGP6vIMhjlGLg9heQ&usqp=CAU" style="width: 100px;height: 100px;"> </div>
             <div style="display: flex;margin-top: 0px;">
-                <button style="font-size: 100px;width: 15%;margin: 10%;background-color: transparent;color: white;" onclick="prev()">
+                <button style="font-size: 100px;width: 15%;margin: 10%;background-color: transparent;color: white;margin-top:1%;" onclick="prev()">
             < </button>
                 <div style="font-size: 25px;width: 100%;margin: 10%;text-align: center;">
                     <p id="p">Select your car. Pay. Drive. Return. The zoomcar booking process is as simple as this. Butter cannot be smoother than this.
@@ -457,7 +458,7 @@
                     <p style="color: green;" id="p_name">- Diptarko C
                     </p>
                 </div>
-                <button style="font-size: 100px;width: 25%;margin: 10%;background-color: transparent;color: white;" onclick="next()">>
+                <button style="font-size: 100px;width: 25%;margin: 10%;background-color: transparent;color: white;margin-top:1%;" onclick="next()">>
                 </button>
             </div>
         </div>
@@ -497,15 +498,18 @@
             var msg_name = ["- D. Samuel", "- Yekula Santosh", "- Sunil Rastogi", "- Rohit R"];
             var i = 0;
 
-            if (i == msg_arr.length - 1) {
+            if (i == (msg_arr.length - 1) || i <= 0) {
                 i = 0;
             }
+
 
             function next() {
                 let p_msg = document.getElementById("p");
                 let p_na = document.getElementById("p_name");
-
-
+                console.log(msg_arr[4]);
+                if (i >= 4) {
+                    i = 0;
+                }
                 console.log(p_msg, p_na, i);
                 p_msg.innerText = ""
                 p_msg.innerText = msg_arr[i++];
@@ -521,7 +525,9 @@
             }
 
             function prev() {
-
+                if (i < 0) {
+                    i = 0;
+                }
                 let p_msg = document.getElementById("p");
                 let p_na = document.getElementById("p_name");
 
