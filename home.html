@@ -219,8 +219,158 @@
             display: block;
         }
         
+        #flow {
+            overflow: hidden;
+            background-color: transparent;
+        }
+        
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 105%;
+            display: flex;
+            height: 80px;
+            flex-direction: row;
+            background: white;
+            margin-left: -193px;
+            box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
+        }
+        
+        .serachbar_pro_img {
+            margin-left: -371px;
+            margin-top: 20px;
+            width: 107px;
+            height: 27px;
+        }
+        
+        #serac_bar_default {
+            background-color: white;
+            border: 1px solid rgb(44, 43, 43);
+            border-radius: 6px;
+            height: 50px;
+            width: 400px;
+            color: rgb(49, 45, 45);
+            margin-left: 30%;
+            font-size: 20px;
+            align-items: center;
+        }
+        
         body {
             font-family: "arial";
+        }
+        /* Extra small devices (phones, 600px and down) */
+        
+        @media (max-width: 600px) {
+            #nav {
+                width: 100%;
+                height: 10%;
+            }
+            #nav>div {
+                margin: 0%;
+                width: 12%;
+                font-size: 10px;
+            }
+            #work {
+                height: 800px;
+            }
+            #info {
+                height: 800px;
+            }
+            #user>div {
+                margin: 0%;
+                height: 800px;
+                width: 300px;
+            }
+            #slide {
+                height: 300px;
+                margin-top: 75px;
+            }
+            #slide>#qoutation {
+                margin-left: 100px;
+            }
+            #p {
+                font-size: 10px;
+            }
+            #p_name {
+                font-size: 15px;
+            }
+            #footers {
+                height: 150px;
+                font-size: 10px;
+            }
+            #footers>div {
+                margin: 0% 10%;
+            }
+            #flow {
+                margin-left: 0%;
+            }
+            #flow>#serac_bar_default {
+                margin-left: 0%;
+                color: black;
+            }
+            #serac_bar_default>#arrow {
+                margin-left: 45%;
+            }
+            #intro>p {
+                font-size: 25px;
+            }
+        }
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        
+        @media only screen and (min-width: 600px) {
+            #nav {
+                width: 100%;
+                height: 10%;
+            }
+            #nav>div {
+                margin: 0%;
+                width: 12%;
+                font-size: 10px;
+            }
+            #work {
+                height: 800px;
+            }
+            #info {
+                height: 800px;
+            }
+            #user>div {
+                margin: 0%;
+                height: 800px;
+                width: 300px;
+            }
+            #slide {
+                height: 500px;
+                margin-top: 75px;
+            }
+            #slide>#qoutation {
+                margin-left: 75px;
+            }
+            #p {
+                font-size: 20px;
+            }
+            #p_name {
+                font-size: 20px;
+            }
+            #footers {
+                height: 200px;
+                font-size: 20px;
+            }
+            #footers>div {
+                margin: 0% 10%;
+            }
+            #flow {
+                margin-left: 0%;
+            }
+            #flow>#serac_bar_default {
+                margin-left: 0%;
+                color: black;
+            }
+            #serac_bar_default>#arrow {
+                margin-left: 45%;
+            }
+            #intro>p {
+                font-size: 35px;
+            }
         }
     </style>
 </head>
@@ -234,19 +384,19 @@
 
         <div class="float-r">
 
-            <a href="login.html">LOGIN</a>
+            <a href="#">LOGIN</a>
 
         </div>
         <div class=" float-r ">
-            <a href="login.html">SIGNUP</a>
+            <a href="#">SIGNUP</a>
         </div>
-        <div class=" float-r" style="height: -1px;margin-top: 0px;">
+        <div class=" float-r" style="height: -10px;margin-top: 0px;">
             <div class="dropbtn float-r dropdown" style="font-size: 20px; background-color: transparent;margin-top: 0px;">MOBILE APP
 
                 <!-- <i class="fa fa-caret-down"></i>-->
 
                 <div class="dropdown-content">
-                    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7QYicbC68K1SLmUUtoVci5YswGfPnCisjtA&usqp=CAU" style="height: 35px;width: 100%;"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJj8LuevwdQYk2S3w1B3EeDskXk7LvtcHOkzlQQnWO3NMDX6qwH7bCnGHqCR_t_aFmtw&usqp=CAU" style="height: 35px;width: 92%;"></a>
+                    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7QYicbC68K1SLmUUtoVci5YswGfPnCisjtA&usqp=CAU" style="height: 35px;width: 100%;"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJj8LuevwdQYk2S3w1B3EeDskXk7LvtcHOkzlQQnWO3NMDX6qwH7bCnGHqCR_t_aFmtw&usqp=CAU" style="height: 35px;width: 88%;"></a>
                     <a href="https://itunes.apple.com/us/app/zoomcar-self-drive-cars/id889910218?mt=8&utm_source=home%20page&utm_medium=header%20links&utm_content=iOS&utm_campaign=installs">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwAFKoUEGpPjP79LPi6r9bFfem3GIOQawWVV75SkXyBwevJd183Bvw_wI9duOdX5rTccU&usqp=CAU" style="height: 35px;width: 100%;">
                     </a>
@@ -255,13 +405,13 @@
             </div>
         </div>
         <div class="float-r " style="cursor: pointer;">
-            ZMS>
+            ZMS
         </div>
         <div class="float-r " style="cursor: pointer;">
             AMIGO
         </div>
         <div class="float-r ">
-            <a href="login.html">SUBSCRIPTION</a>
+            <a href="#">SUBSCRIPTION</a>
         </div>
         <div class="float-r ">
             <a href="offer.html">OFFERS</a>
@@ -315,12 +465,13 @@
                 </select>
             </p>
 
-            <div>
-                <a href="login.html">
-                    <div style="background-color: white;border: 1px solid rgb(44, 43, 43);border-radius: 6px; height: 50px;width: 400px;color: rgb(49, 45, 45);align-items: center;margin-left:30%;font-size: 20px;display: flex;">
+            <div id="flow">
+                <a href="#">
+                    <div id="serac_bar_default">
 
-                        <p style="margin-left: 8%;">Start your wonderful journey</p>
-                        <p style="margin-left: 18%;font-size: 25px;color: rgb(32, 30, 30);">></p>
+                        <p style="margin-left: 8%;" id="start">Start your wonderful journey</p>
+                        <p style="margin-left: 88%; margin-top: -37px; font-size: 25px;color: rgb(32, 30, 30);" id="arrow">></p>
+
                     </div>
                 </a>
             </div>
@@ -448,7 +599,7 @@
         <!--Zoomcar sliding review start-->
         <div id="slide">
             <div style="align-items: center;margin-left: 600px;height:40px;width: 50px;margin-top: 25px;margin-bottom: 1px;">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMkO4p2w-6Y1wXgtIgdJGP6vIMhjlGLg9heQ&usqp=CAU" style="width: 100px;height: 100px;"> </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMkO4p2w-6Y1wXgtIgdJGP6vIMhjlGLg9heQ&usqp=CAU" style="width: 100px;height: 100px;" id="qoutation"> </div>
             <div style="display: flex;margin-top: 0px;">
                 <button style="font-size: 100px;width: 15%;margin: 10%;background-color: transparent;color: white;margin-top:1%;" onclick="prev()">
             < </button>
@@ -502,7 +653,7 @@
                 i = 0;
             }
 
-
+            //function for changing review to next review
             function next() {
                 let p_msg = document.getElementById("p");
                 let p_na = document.getElementById("p_name");
@@ -523,7 +674,7 @@
 
 
             }
-
+            //function for changing review to preview review
             function prev() {
                 if (i < 0) {
                     i = 0;
@@ -543,6 +694,35 @@
 
                 console.log(p_msg, p_na, i);
 
+            }
+            //function to call myfunction on scroll
+            window.onscroll = function() {
+                myFunction()
+            };
+
+            var navbar = document.getElementById("flow");
+            var img_scroll = document.createElement("img")
+            var div_seracxh = document.getElementById("serac_bar_default")
+            img_scroll.src = "https://www.zoomcar.com/build/img/color-logo.f8af0af350b2f675a31a558fad8391df.svg"
+            img_scroll.setAttribute("class", "serachbar_pro_img")
+            img_scroll.setAttribute("width", "100%")
+            var sticky = navbar.offsetTop;
+            //function to show search bar on scrolling 
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                    navbar.append(img_scroll)
+                    img_scroll.style.visibility = "visible"
+                    div_seracxh.style.margin = "3% 0% 0% 179%"
+                    navbar.style.backgroundColor = "white"
+
+
+                } else {
+                    navbar.style.backgroundColor = "transparent";
+                    navbar.classList.remove("sticky");
+                    img_scroll.style.visibility = "hidden";
+                    div_seracxh.style.margin = "0% 0% 0% 30%";
+                }
             }
         </script>
 </body>
