@@ -211,11 +211,79 @@
             color: #000;
             opacity: .54;
         }
+        .middle span{
+            font-size: 12px;
+        }
+        .left_coloum{
+            padding: 5px;
+        }
+        .heading{
+          text-align: center;
+          margin-top: 10px;
+          font-family: Open Sans;
+          opacity: .54;
+          text-transform: uppercase;
+          color: #000;
+          font-weight: 600;
+          font-size: 12px;
+        }
+        .heading img{
+            width: 5%;
+            height: 5%;
+            border-radius: 50%;
+        }
+    
     </style>
 </head>
 <body>
     <div id="main">
-        <div class="left_coloum">2</div>
+        <div class="left_coloum">
+            <div class="heading">
+                <span>
+            <img src="https://thumbs.dreamstime.com/b/tick-mark-icon-flat-illustration-check-mark-vector-tick-mark-icon-flat-illustration-check-mark-vector-164317151.jpg" alt="">
+                </span>
+              <span>
+                START AND DESTINATION
+              </span>  
+            </div>
+          <div>
+              
+          </div>
+                <!-- <div class="one-way location-details">
+                    <div title="Krantivira Sangolli Rayanna (Bengaluru), M.G. Railway Colony, Majestic, Bengaluru, Karnataka 560023, India" class="start one-way-location">
+                        <label>STARTING POINT <span class="right-arrow">
+
+                        </span>
+                    </label> <h5>bangalore</h5>
+                        
+                        <p>Krantivira Sangolli Rayanna (Bengaluru), M.G. Railway Colony, Majestic, Bengaluru, Karnataka 560023, India</p>
+                    </div>
+                     <div title="378M+C77, Navalar Nagar, Chepauk, Triplicane, Chennai, Tamil Nadu 600005, India" class="end one-way-location">
+                         <label>DESTINATION <span class="right-arrow">
+
+                         </span>
+                        </label>
+                         <h5>chennai</h5>
+                          <p>378M+C77, Navalar Nagar, Chepauk, Triplicane, Chennai, Tamil Nadu 600005, India</p>
+                        </div>
+                    </div> 
+                    <div class="one-way-toggle">
+                        <img src="" alt=""> 
+                        <div>
+                DROP OFF IN A DIFFERENT CITY
+              </div>
+               <div class="toggle-button">
+                   <input id="one-way" type="checkbox" class="tgl tgl-green"> 
+                   <label for="one-way" class="tgl-btn"></label>
+                </div>
+            </div> -->
+        <!-- </div> -->
+
+
+
+
+
+        </div>
         <div class="right_coloum">
             <div class="title">
                 <h2><svg xmlns="http://www.w3.org/2000/svg" width="12" height="19" viewBox="0 0 12 19"><path fill=" rgb(238,90,87)" fill-rule="nonzero" d="M11.908 7.688a.753.753 0 0 0-.658-.38H7.579L8.246.804a.73.73 0 0 0-.5-.763.762.762 0 0 0-.877.294L.119 10.566a.714.714 0 0 0-.027.745.753.753 0 0 0 .658.381h3.671l-.667 6.505a.73.73 0 0 0 .5.762.755.755 0 0 0 .878-.295l6.75-10.23a.715.715 0 0 0 .026-.746z" </path></svg>
@@ -229,7 +297,6 @@
                     <label>Sort by:</label>
                     <div class="item"> Price: Low to High </div>
                     <div class="item" id="sort"> Price: High to Low </div>
-                    <div class="item active-input"> Distance </div>
                    </div>
                    <div class="no_fuel_cont">
                     <div class="no_fuel-block">
@@ -524,14 +591,12 @@
     }
     showProduct() 
     showProduct1()
-
+   var main_con2=document.getElementById("main_cont2"); 
     document.querySelector(".item").addEventListener("click", function(){
-        document.getElementById('main_cont').style.display = "none"
-        document.getElementById('main_cont1').style.display = "none"
         var re=Mycars.reverse();
-        var main_con2=document.getElementById("main_cont2"); 
+        var count=0;
         re.forEach(function (Product) {
-            var count=0;
+           
             var div1=document.createElement("div");
             div1.setAttribute("class","left");
             var image=document.createElement("img");
@@ -617,16 +682,17 @@
             div3.append(h1,p,btn)
 
             div3.setAttribute("class","right");
-            main_con2.append(div1,div2,div3);
+           
 
-          
-                final.append(main_con2)
-            
-            
+         
+            main_con2.append(div1,div2,div3);
+            final.append(main_con2) 
+           
         }); 
         document.getElementById('main_cont2').style.display = "grid"
         document.getElementById('main_cont').style.display = "none"
         document.getElementById('main_cont1').style.display = "none"
+       
    
     })
     
