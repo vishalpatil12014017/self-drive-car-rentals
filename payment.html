@@ -48,42 +48,42 @@
             height: 70%;
             width: 50%;
             margin-top: 1px;
-            background-image: url(https://smartpay.comprisetechnologies.com/scripts/SmartPay/CVV/CVV_files/amexco.gif);
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
+            background-color: rgb(41, 43, 61);
         }
         
         #payment>img {
             width: 100%;
-            height: 100%;
+            height: 90%;
         }
         
         .vl {
             border-left: 4px solid black;
-            height: 37.5%;
+            height: 39%;
             position: absolute;
-            right: 820px;
+            right: 65%;
         }
         
         form {
             text-align: left;
             font-size: 18px;
-            margin: 5%;
+            margin: 2%;
+            height: 100%;
         }
         
         form>label {
-            margin: 5% 0%;
+            margin: 2% 0%;
         }
         
         form>input {
-            margin: 5% 0%;
+            margin: 2% 0%;
         }
         
         #submit {
-            margin: 10% 20%;
+            margin: 10% 10%;
             height: 30px;
             width: 150px;
             font-size: 20px;
+            /* background-color: chocolate;*/
         }
         
         #footers {
@@ -208,10 +208,10 @@
                 </div>
             </div>
         </div>
-        <div class="float-r ">
+        <div class="float-r " style="cursor: pointer;">
             ZMS
         </div>
-        <div class="float-r ">
+        <div class="float-r " style="cursor: pointer;">
             AMIGO
         </div>
         <div class="float-r ">
@@ -224,35 +224,42 @@
     </div>
     <!--NAV BAR END-->
     <!--Payment content start-->
-    <div style="background-color: turquoise;height: 40px;width: 50%;margin:5px 30% ;margin-bottom: 1px;">
-        <p style="float: left;font-size: medium;">Total Payment Amount</p>
-        <p style="float: right;font-size: medium;"></p>
-    </div>
-    <br>
-    <div style="height: 40px;width: 50%;margin:5px 30% ;margin-bottom: 0px;border: 1px solid black;">
-        <p style="float: left;font-size:20px;color: green;">Payment Method</p>
-        <p style="float: right;font-size:20px;" id="booking"> </p>
-    </div>
-    <div style="display: flex; border: 1px solid rgb(129, 106, 106);    height: 70%;    width: 50%;margin:2% 30%;    margin-top: 1px;">
+    <div style="display: flex;margin:5% 9%;width:75%;height: 75%;width: 1200px;">
+        <div style="width:900px;margin-right: 2%;">
+            <div style="background-color: turquoise;height: 40px;width: 50%;margin:5px 30% ;margin-bottom: 1px;">
+                <p style="float: left;font-size: medium;">Total Payment Amount</p>
+                <p style="float: right;font-size: medium;"></p>
+            </div>
+            <br>
+            <div style="height: 40px;width: 50%;margin:0% 30% ;margin-bottom: 0px;border: 1px solid black;padding: 0%;">
+                <p style="float: left;font-size:20px;color: green;">Payment Method</p>
+                <p style="float: right;font-size:20px;" id="booking"> </p>
+            </div>
+            <div style="display: flex; border: 1px solid rgb(129, 106, 106);    height: 70%; padding: 0%;   width: 50%;margin:0% 30%; margin-bottom: 0px;   margin-top: 1px;">
 
-        <div style="text-align: initial;margin-top: 0%;">Card Payment</div>
-        <div class="vl"></div>
-        <div id="payment" style="width: 100%;height: 100%;">
-            <!--Payment form start-->
-            <form style="width: 100%;height: 100%;margin-right: 0%;" onsubmit="pay()">
+                <div style="text-align: initial;margin-top: 0%;">Card Payment</div>
+                <div class="vl"></div>
+                <div id="payment" style="width: 100%;height:97%;margin:1px;">
+                    <!--Payment form start-->
+                    <form style="width: 100%;height: 100%;margin-right: 0%;margin-left: 10px;" onsubmit="pay()">
 
-                <input type="number" placeholder="Enter Card Number" id="card_number"><br>
+                        <input type="number" placeholder="Enter Card Number" id="card_number"><br>
 
 
-                <input type="number" placeholder="MM /YYY" id="card_expiry"><br>
+                        <input type="text" placeholder="MM /YYY" id="card_expiry"><br>
 
-                <input type="password" placeholder="CVV" id="card_CVV"><br>
-                <input type="submit" value="Pay" id="submit">
-            </form>
-            <!--Payment Form end-->
+                        <input type="password" placeholder="CVV" id="card_CVV"><br>
+                        <input type="submit" value="Pay" id="submit">
+                    </form>
+                    <!--Payment Form end-->
 
+                </div>
+            </div>
         </div>
-        <div style="width:25%;margin-left: 0%;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0dF8vwazUKUdsKvFDZ4i0J_BbNTIa3UM1EG9tIBf7fbX7P2WyN7SwCye3hvDJNpnClDE&usqp=CAU"> </div>
+        <div style="width:20.5%;margin-left: 0%;border: 1px solid gray;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0dF8vwazUKUdsKvFDZ4i0J_BbNTIa3UM1EG9tIBf7fbX7P2WyN7SwCye3hvDJNpnClDE&usqp=CAU">
+            <p>Maruti Swift</p>
+            <p>3 seated</p>
+        </div>
     </div>
     <!--Payment Content end-->
     <div id="footers">
@@ -289,28 +296,32 @@
         let book = document.getElementById("booking");
         book.innerText = "";
         book.innerText = "Booking id :  " + Math.floor((Math.random() * 600000));
-        if ((document.getElementById("card_number").value != "") && ((document.getElementById("card_CVV").value != "")) && ((document.getElementById("card_expiry").value != ""))) {
-            document.getElementById("submit").style.backgroundColor = "red"
 
-        }
+
 
         function pay() {
             event.preventDefault();
-            let card_number = document.getElementById("card_number").value;
-            let card_cvv = document.getElementById("card_CVV").value;
-            if (card_number.length < 12) {
+            var card_number = document.getElementById("card_number").value;
+            var card_cvv = document.getElementById("card_CVV").value;
+            if ((card_number !== "") && ((card_cvv !== "")) && ((document.getElementById("card_expiry").value !== ""))) {
+                document.getElementById("submit").style.backgroundColor = "chocolate"
+
+            }
+            if (card_number.length < 12 || card_number == "") {
                 alert("Please Enter Valid Card Number");
                 return false;
-            } else if (card_cvv.length > 3) {
+            } else if (card_cvv.length > 3 || card_cvv == "") {
                 alert("Please Enter Valid CVV");
                 return false;
-            } else {
-                setTimeout(function() {
-                    alert(`Your payment is successful.
-                     Enjoy the Ride.`)
-                    window.location.href = "home.html";
-                }, 3000);
             }
+
+
+            setTimeout(function() {
+                alert(`Your payment is successful.
+                     Enjoy the Ride.`)
+                window.location.href = "home.html";
+            }, 3000);
+
 
         }
     </script>
