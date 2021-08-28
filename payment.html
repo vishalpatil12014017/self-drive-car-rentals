@@ -1,14 +1,20 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://www.zoomcar.com/build/img/favicon.d917d618529f3ffdf883e3b847e516df.png" />
     <title>Self Drive Car Rentals |Book ZoomCar & Feel Safe!zoomcar.com</title>
+    <link rel="shortcut icon" href="https://www.zoomcar.com/build/img/favicon.d917d618529f3ffdf883e3b847e516df.png" />
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600">
     <style>
+        body * {
+            font-family: "Open Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif!important;
+            color: #323a44;
+        }
+        
         #nav {
             background-color: rgb(41, 43, 61);
             margin: 0% 0%;
@@ -23,6 +29,14 @@
             margin-top: 5px;
             margin-bottom: 5px;
             font-size: 20px;
+        }
+        
+        .zms {
+            color: white;
+        }
+        
+        .amigo {
+            color: white;
         }
         
         a:link {
@@ -41,84 +55,6 @@
             float: right;
         }
         
-        #payment {
-            margin: 5% 30%;
-            text-align: center;
-            align-items: center;
-            height: 70%;
-            width: 50%;
-            margin-top: 1px;
-            background-color: rgb(41, 43, 61);
-        }
-        
-        #payment>img {
-            width: 100%;
-            height: 90%;
-        }
-        
-        .vl {
-            border-left: 4px solid black;
-            height: 39%;
-            position: absolute;
-            right: 65%;
-        }
-        
-        form {
-            text-align: left;
-            font-size: 18px;
-            margin: 2%;
-            height: 100%;
-        }
-        
-        form>label {
-            margin: 2% 0%;
-        }
-        
-        form>input {
-            margin: 2% 0%;
-        }
-        
-        #submit {
-            margin: 10% 10%;
-            height: 30px;
-            width: 150px;
-            font-size: 20px;
-            /* background-color: chocolate;*/
-        }
-        
-        #footers {
-            background-color: rgb(41, 43, 61);
-            align-items: center;
-            text-align: center;
-            padding: 2%;
-            height: 100px;
-            width: 97%;
-            color: white;
-        }
-        
-        .flex {
-            display: flex;
-        }
-        
-        #info>.flex>div {
-            width: 20%;
-            align-items: center;
-            height: 35%;
-            margin: 1%;
-            margin-left: 12%;
-        }
-        
-        .size {
-            height: 100px;
-            width: 100px;
-        }
-        
-        button {
-            outline: none;
-            border: none;
-            cursor: pointer;
-        }
-        
         .dropbtn {
             background-color: #04AA6D;
             color: white;
@@ -131,7 +67,6 @@
             float: left;
             overflow: hidden;
         }
-        /* Dropdown button */
         
         .dropdown .dropbtn {
             font-size: 16px;
@@ -175,19 +110,236 @@
             display: block;
         }
         
-        body {
-            font-family: "arial";
+        #payment {
+            margin: 5% 30%;
+            text-align: center;
+            align-items: center;
+            height: 70%;
+            width: 50%;
+            margin-top: 1px;
+            background-color: rgb(41, 43, 61);
+        }
+        
+        #payment>img {
+            width: 100%;
+            height: 90%;
+        }
+        
+        .vl {
+            border-left: 4px solid black;
+            height: 39%;
+            position: absolute;
+            right: 65%;
+        }
+        
+        form {
+            text-align: left;
+            font-size: 18px;
+            margin: 2%;
+            height: 100%;
+        }
+        
+        form>label {
+            margin: 2% 0%;
+            text-align: center;
+        }
+        
+        form>input {
+            margin: 2% 25%;
+            text-align: center;
+        }
+        
+        #submit {
+            margin: 10% 25%;
+            height: 30px;
+            width: 150px;
+            font-size: 20px;
+            /* background-color: chocolate;*/
+        }
+        
+        #checkout_cont {
+            max-width: 60%;
+            padding: 20px;
+            min-height: 400px;
+            background-color: rgb(243, 243, 243);
+            border-radius: 8px;
+            margin: 50px auto;
+            display: flex;
+        }
+        
+        .payment_cont {
+            width: 60%;
+            background-color: white;
+            border: 1px solid #ccc;
+            float: left;
+        }
+        
+        .checkout_div {
+            padding: 15px 10px;
+            font-size: 18px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .book_div {
+            padding: 15px 10px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .booking {
+            font-size: 16px;
+        }
+        
+        .rupees_paid {
+            font-size: 16px;
+            color: #00AEFF;
+        }
+        
+        .promotion {
+            border-bottom: 1px solid #eee;
+            padding: 15px 10px;
+            margin-bottom: 10px;
+        }
+        
+        .refund_cont {
+            padding: 15px 10px;
+            /* margin-bottom: 10px; */
+            border-bottom: 1px solid #eee;
+        }
+        
+        .coupon_btn {
+            background-color: #70AD4D;
+            border-radius: 3px;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        
+        .total {
+            padding: 15px 10px;
+            background-color: #F2F8ED;
+        }
+        
+        .car_cont {
+            width: 35%;
+            background-color: white;
+            border: 1px solid #ccc;
+            float: right;
+        }
+        
+        .summary {
+            padding: 10px 0px;
+            text-align: center;
+            font-size: 18px;
+        }
+        
+        .f_l {
+            float: left;
+        }
+        
+        .f_r {
+            float: right;
+        }
+        
+        .clear {
+            clear: both;
+        }
+        
+        .Car_details {
+            text-align: center;
+        }
+        
+        .btn_cont {
+            width: 60%;
+            text-align: center;
+            margin: 20px 20px 0px 0px;
+        }
+        
+        #checkout_btn {
+            cursor: pointer;
+            background-color: #70AD4D;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+            font-weight: 500;
+            border: none;
+            padding: 10px 25px;
+        }
+        
+        .border {
+            border-bottom: 1px solid #eee;
+        }
+        
+        .start_end_cont {
+            margin: 0px 8px;
+            padding: 10px 0px;
+            text-align: center;
+        }
+        
+        .start {
+            font-size: 18px;
+            color: #666666;
+            display: inline-block;
+        }
+        
+        .start_time {
+            font-size: 11px;
+            font-weight: 100;
+        }
+        
+        .to {
+            background: url(https://assets.zoomcar.com/assets/home/to-027eb439c7db0a0ce1cb1fe2c2535cc1.svg) no-repeat 45.8% 52.6%;
+            height: 33px;
+            width: 50px;
+            display: inline-block;
+        }
+        
+        .end {
+            font-size: 18px;
+            color: #666666;
+            display: inline-block;
+        }
+        
+        .end_time {
+            font-size: 11px;
+            font-weight: 100;
+        }
+        
+        #footers {
+            background-color: rgb(41, 43, 61);
+            align-items: center;
+            text-align: center;
+            padding: 2%;
+            height: 100px;
+            width: 97%;
+            color: white;
+        }
+        
+        p {
+            color: white;
+        }
+        
+        .flex {
+            display: flex;
+        }
+        
+        #info>.flex>div {
+            width: 20%;
+            align-items: center;
+            height: 35%;
+            margin: 1%;
+            margin-left: 12%;
+        }
+        
+        .size {
+            height: 100px;
+            width: 100px;
         }
     </style>
 </head>
 
 <body>
-    <!--NAV BAR Start-->
     <div id="nav">
         <img src="https://www.zoomcar.com/build/img/logo.f0c7a9744cfeb3fb5c90eafda61dd2ce.svg" style="height: 80%;width: 10%;">
-
-
-
         <div class="float-r">
             <a href="login.html">LOGIN</a>
         </div>
@@ -195,7 +347,7 @@
             <a href="login.html">SIGNUP</a>
         </div>
         <div class=" float-r" style="height: -1px;margin-top: 0px;">
-            <div class="dropbtn float-r dropdown" style="font-size: 20px; background-color: transparent;margin-top: 0px;">MOBILE APP
+            <div class="dropbtn float-r dropdown" style="font-size: 20px; background-color: transparent;">MOBILE APP
 
                 <!-- <i class="fa fa-caret-down"></i>-->
 
@@ -208,10 +360,10 @@
                 </div>
             </div>
         </div>
-        <div class="float-r " style="cursor: pointer;">
+        <div class="float-r zms " style="cursor: pointer;">
             ZMS
         </div>
-        <div class="float-r " style="cursor: pointer;">
+        <div class="float-r amigo" style="cursor: pointer;">
             AMIGO
         </div>
         <div class="float-r ">
@@ -222,23 +374,20 @@
         </div>
 
     </div>
-    <!--NAV BAR END-->
-    <!--Payment content start-->
-    <div style="display: flex;margin:5% 9%;width:75%;height: 75%;width: 1200px;">
+    <div id="checkout_cont">
         <div style="width:900px;margin-right: 2%;">
             <div style="background-color: turquoise;height: 40px;width: 50%;margin:5px 30% ;margin-bottom: 1px;">
                 <p style="float: left;font-size: medium;">Total Payment Amount</p>
-                <p style="float: right;font-size: medium;"></p>
+                <p style="float: right;font-size: medium;;" id="pa"></p>
             </div>
             <br>
             <div style="height: 40px;width: 50%;margin:0% 30% ;margin-bottom: 0px;border: 1px solid black;padding: 0%;">
-                <p style="float: left;font-size:20px;color: green;">Payment Method</p>
-                <p style="float: right;font-size:20px;" id="booking"> </p>
+                <p style="float: left;font-size:15px;color: #008000;width: 45%;">Payment Method</p>
+                <p style="float: right;font-size:15px;color: black;width: 45%;" id="booking"> </p>
             </div>
-            <div style="display: flex; border: 1px solid rgb(129, 106, 106);    height: 70%; padding: 0%;   width: 50%;margin:0% 30%; margin-bottom: 0px;   margin-top: 1px;">
+            <div style="display: flex; border: 1px solid rgb(129, 106, 106);    height: 70%; padding: 0%;   width: 50%;margin:0% 30%; margin-bottom: 0px;   margin-top: 1px;padding-top: 0px;">
 
-                <div style="text-align: initial;margin-top: 0%;">Card Payment</div>
-                <div class="vl"></div>
+
                 <div id="payment" style="width: 100%;height:97%;margin:1px;">
                     <!--Payment form start-->
                     <form style="width: 100%;height: 100%;margin-right: 0%;margin-left: 10px;" onsubmit="pay()">
@@ -256,12 +405,29 @@
                 </div>
             </div>
         </div>
-        <div style="width:20.5%;margin-left: 0%;border: 1px solid gray;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0dF8vwazUKUdsKvFDZ4i0J_BbNTIa3UM1EG9tIBf7fbX7P2WyN7SwCye3hvDJNpnClDE&usqp=CAU">
-            <p style="text-align: center;">Maruti Swift</p>
-            <p style="text-align: center;">3 seated</p>
+
+        <div class="car_cont ">
+            <div class="summary">SUMMARY</div>
+            <div>
+                <img src="https://s3-ap-southeast-1.amazonaws.com/zoomcar/photographs/original/f4cd052c1a2251c6e32d458f1f7808aa3a7b62d9.png?1584535872" style="width: 100%;">
+            </div>
+            <div class="Car_details">Swift</div>
+            <div class="Car_details">(5 Seater)</div>
+            <div class="border"></div>
+            <div class="start_end_cont">
+                <div class="start">
+                    <div> 11:30 AM </div>
+                    <div class="start_time"> 02 SEP 21, THU</div>
+                </div>
+                <div class="to"></div>
+                <div class="end">
+                    <div> 05:30 PM </div>
+                    <div class="end_time"> 04 SEP 21, SAT</div>
+                </div>
+            </div>
         </div>
+
     </div>
-    <!--Payment Content end-->
     <div id="footers">
         <!--ZOOMCAR footers Start-->
 
@@ -271,7 +437,7 @@
 
                 <p style="margin: 1%;text-align: center;font-size: 20px;">How Zoomcars works?</p>
             </div>
-            <div style="height: 50%;width:50%;           " class="size">
+            <div style="height: 50%;width:50%;" class="size">
                 <img src="https://www.zoomcar.com/build/img/policies.ceddb15a4eef16af85ba8666b1522741.svg" style="height: 50px;width: 50px; margin-top: 3%;">
 
                 <p style="margin: 1%;text-align: center;font-size: 20px;">Policies</p>
@@ -291,42 +457,65 @@
 
 
     </div>
-    <!--ZOOMCAR footers End-->
-    <script>
-        let book = document.getElementById("booking");
-        book.innerText = "";
-        book.innerText = "Booking id :  " + Math.floor((Math.random() * 600000));
 
-
-
-        function pay() {
-            event.preventDefault();
-            var card_number = document.getElementById("card_number").value;
-            var card_cvv = document.getElementById("card_CVV").value;
-            if ((card_number !== "") && ((card_cvv !== "")) && ((document.getElementById("card_expiry").value !== ""))) {
-                document.getElementById("submit").style.backgroundColor = "chocolate"
-
-            }
-            if (card_number.length < 12 || card_number == "") {
-                alert("Please Enter Valid Card Number");
-                return false;
-            } else if (card_cvv.length > 3 || card_cvv == "") {
-                alert("Please Enter Valid CVV");
-                return false;
-            }
-
-
-            setTimeout(function() {
-                alert(`Your payment is successful.
-                     Enjoy the Ride.`)
-                window.location.href = "home.html";
-            }, 3000);
-
-
-        }
-    </script>
 </body>
 
 </html>
+<script>
+    var book = document.getElementById("booking");
+    book.innerText = "";
+    book.innerText = "Booking id :  " + Math.floor((Math.random() * 600000));
 
-</html>
+    var total_rs = document.getElementById("total").innerHTML.split(" ");
+    var total_join = total_rs[1].split(",").join("")
+    var total = Number(total_join)
+
+    function zoomnew() {
+        var final = total - total * 0.3
+        total = final
+        var total_pay = document.getElementById("total").innerHTML = `₹ ${total}`
+        localStorage.setItem("total_payable", total_pay)
+
+
+    }
+    let payment_total = document.getElementById("pa");
+    payment_total.innerText = "1295";
+
+
+    function zoomnew() {
+        var final = total - total * 0.3
+        total = final
+        var total_pay = document.getElementById("total").innerHTML = `₹ ${total}`
+        localStorage.setItem("total_payable", total_pay)
+
+
+    }
+
+
+
+    function pay() {
+        event.preventDefault();
+        var card_number = document.getElementById("card_number").value;
+        var card_cvv = document.getElementById("card_CVV").value;
+        if ((card_number !== "") && ((card_cvv !== "")) && ((document.getElementById("card_expiry").value !== ""))) {
+            document.getElementById("submit").style.backgroundColor = "chocolate"
+
+        }
+        if (card_number.length < 12 || card_number == "") {
+            alert("Please Enter Valid Card Number");
+            return false;
+        } else if (card_cvv.length > 3 || card_cvv == "") {
+            alert("Please Enter Valid CVV");
+            return false;
+        }
+
+
+        setTimeout(function() {
+            alert(`Your payment is successful.
+                     Enjoy the Ride.`)
+            window.location.href = "home.html";
+        }, 3000);
+
+
+    }
+</script>
