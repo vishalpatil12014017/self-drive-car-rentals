@@ -14,9 +14,24 @@ let db_arr = localStorage.getItem("car_cart")
 let db_cart = JSON.parse(db_arr)
 console.log(db_cart);
 
-let total = localStorage.getItem("car_price")
+var total_join = db_cart[1].split(",").join("")
+
+let total = Number(total_join)
+total = total + 2499
+
 console.log(total);
-document.getElementById("amount").textContent = "₹ " + total
+document.getElementById("total").innerText = `₹ ${total}`
+
+function zoomnew() {
+    var final = total - ((total * 30) / 100)
+    total = final
+    total_pay = total
+    document.getElementById("total").innerText = `₹ ${total}`
+
+    localStorage.setItem("total_payable", total_pay)
+
+
+}
 
 let div_car = document.getElementById("car_img")
 let car_img = document.createElement("img")
@@ -29,13 +44,7 @@ let car_name = document.querySelector(".Car_details")
 car_name.innerText = db_cart[0]
 
 
-
-
-function Suscces() {
-    if (document.getElementById("card_number").value !== "" && document.getElementById("card_expiry").value !== "" && document.getElementById("card_CVV").value !== "") {
-        alert("Payment was Succsefull.")
-        window.open("home.html", "_top")
-    } else if (document.getElementById("card_number").value == "" || document.getElementById("card_expiry").value == "" || document.getElementById("card_CVV").value == "") {
-        alert("Please enter all value correct")
-    }
+function payment_page() {
+    localStorage.setItem("car_price", total_pay)
+    window.open("payment.html", "_top")
 }

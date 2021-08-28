@@ -1,0 +1,110 @@
+#main {
+    max-width: 70%;
+    width: 100%;
+    min-height: 400px;
+    padding: 30px;
+    background-color: #EEEEEE;
+    border-radius: 8px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    color: #33414f;
+    position: relative;
+    overflow: hidden;
+    /* display: none; */
+}
+
+.left_cont {
+    box-shadow: 0 0 1px 2px #c4c2c2;
+    width: 45%;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    background: #fff;
+}
+
+.promo {
+    height: 400px;
+    padding: 35px;
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 30px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.right_cont {
+    width: 55%;
+    padding: 20px;
+    text-align: center;
+}
+
+.right_cont p {
+    font-weight: 600;
+}
+
+.facebook {
+    width: 65%;
+    height: 30px;
+    margin: auto;
+    padding: 10px;
+    background-color: #4267B2;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px #e0dfdf;
+}
+
+.google {
+    width: 65%;
+    height: 30px;
+    margin: auto;
+    padding: 10px;
+    background-color: #f4425a;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px #e0dfdf;
+}
+
+input {
+    width: 67%;
+    height: 30px;
+    border-radius: 3px;
+    margin-top: 50px;
+    border: 1px solid black;
+}
+
+#next {
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+body * {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif!important;
+}
+
+.cont {
+    width: 100%;
+    height: 100%;
+    ;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
