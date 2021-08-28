@@ -1,0 +1,229 @@
+  body * {
+            font-family: "Open Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif!important;
+            color: #323a44;
+        }
+        
+        #payment {
+            margin: 5% 30%;
+            text-align: center;
+            align-items: center;
+            height: 70%;
+            width: 50%;
+            margin-top: 1px;
+            background-color: rgb(41, 43, 61);
+        }
+        
+        #payment>img {
+            width: 100%;
+            height: 90%;
+        }
+        
+        .vl {
+            border-left: 4px solid black;
+            height: 39%;
+            position: absolute;
+            right: 65%;
+        }
+        
+        form {
+            text-align: left;
+            font-size: 18px;
+            margin: 2%;
+            height: 100%;
+        }
+        
+        form>label {
+            margin: 2% 0%;
+            text-align: center;
+        }
+        
+        form>input {
+            margin: 2% 25%;
+            text-align: center;
+        }
+        
+        #submit {
+            margin: 10% 25%;
+            height: 30px;
+            width: 150px;
+            font-size: 20px;
+            /* background-color: chocolate;*/
+        }
+        
+        #checkout_cont {
+            max-width: 60%;
+            padding: 20px;
+            min-height: 400px;
+            background-color: rgb(243, 243, 243);
+            border-radius: 8px;
+            margin: 50px auto;
+            display: flex;
+        }
+        
+        .payment_cont {
+            width: 60%;
+            background-color: white;
+            border: 1px solid #ccc;
+            float: left;
+        }
+        
+        .checkout_div {
+            padding: 15px 10px;
+            font-size: 18px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .book_div {
+            padding: 15px 10px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .booking {
+            font-size: 16px;
+        }
+        
+        .rupees_paid {
+            font-size: 16px;
+            color: #00AEFF;
+        }
+        
+        .promotion {
+            border-bottom: 1px solid #eee;
+            padding: 15px 10px;
+            margin-bottom: 10px;
+        }
+        
+        .refund_cont {
+            padding: 15px 10px;
+            /* margin-bottom: 10px; */
+            border-bottom: 1px solid #eee;
+        }
+        
+        .coupon_btn {
+            background-color: #70AD4D;
+            border-radius: 3px;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        
+        .total {
+            padding: 15px 10px;
+            background-color: #F2F8ED;
+        }
+        
+        .car_cont {
+            width: 35%;
+            background-color: white;
+            border: 1px solid #ccc;
+            float: right;
+        }
+        
+        .summary {
+            padding: 10px 0px;
+            text-align: center;
+            font-size: 18px;
+        }
+        
+        .f_l {
+            float: left;
+        }
+        
+        .f_r {
+            float: right;
+        }
+        
+        .clear {
+            clear: both;
+        }
+        
+        .Car_details {
+            text-align: center;
+        }
+        
+        .btn_cont {
+            width: 60%;
+            text-align: center;
+            margin: 20px 20px 0px 0px;
+        }
+        
+        #checkout_btn {
+            cursor: pointer;
+            background-color: #70AD4D;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+            font-weight: 500;
+            border: none;
+            padding: 10px 25px;
+        }
+        
+        .border {
+            border-bottom: 1px solid #eee;
+        }
+        
+        .start_end_cont {
+            margin: 0px 8px;
+            padding: 10px 0px;
+            text-align: center;
+        }
+        
+        .start {
+            font-size: 18px;
+            color: #666666;
+            display: inline-block;
+        }
+        
+        .start_time {
+            font-size: 11px;
+            font-weight: 100;
+        }
+        
+        .to {
+            background: url(https://assets.zoomcar.com/assets/home/to-027eb439c7db0a0ce1cb1fe2c2535cc1.svg) no-repeat 45.8% 52.6%;
+            height: 33px;
+            width: 50px;
+            display: inline-block;
+        }
+        
+        .end {
+            font-size: 18px;
+            color: #666666;
+            display: inline-block;
+        }
+        
+        .end_time {
+            font-size: 11px;
+            font-weight: 100;
+        }
+        
+        #footers {
+            background-color: rgb(41, 43, 61);
+            align-items: center;
+            text-align: center;
+            padding: 2%;
+            height: 100px;
+            width: 97%;
+            color: white;
+        }
+        
+        p {
+            color: white;
+        }
+        
+        .flex {
+            display: flex;
+        }
+        
+        #info>.flex>div {
+            width: 20%;
+            align-items: center;
+            height: 35%;
+            margin: 1%;
+            margin-left: 12%;
+        }
+        
+        .size {
+            height: 100px;
+            width: 100px;
+        }
