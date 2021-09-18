@@ -137,9 +137,9 @@ Insert gif or link to demo
 #### Shashank Shekhar Singh
 - Github  - [@shashank0194](https://github.com/shashank0194)
 #### Vishal Patil
-- Github  - [@vishalpatil12014017](https://github.com/vishalpatil12014017)]
+- Github  - [@vishalpatil12014017](https://github.com/vishalpatil12014017)
 
-
+## Github_Link-[Project_link](https://github.com/vishalpatil12014017/self-drive-car-rentals)
 
 
 
