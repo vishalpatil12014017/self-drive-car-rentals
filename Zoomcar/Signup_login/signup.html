@@ -25,9 +25,9 @@
                 <p>We have sent your requested OTP</p>
                 <form action="new.html" onsubmit="return validateotp()">
                     <div>
-                        <input style="text-align: center; width: 30%;" type="password" id="otp-cont">
+                        <input type="password" class="inpt__validotp" id="otp-cont">
                         <br>
-                        <label id="otplabel" style="color: red; visibility: hidden;">Valid</label>
+                        <label id="otplabel" class="label_otp">Valid</label>
                         <br>
                     </div>
                     <div class="img_cont">
@@ -84,7 +84,7 @@
                 <form onsubmit="validateEmail()">
                     <input type="text" placeholder="Enter your Email or Mobile number" id="input_format">
                     <br>
-                    <label id="lbltext" style="color: red; visibility: hidden;">Please Enter a Valid Phone Number</label>
+                    <label id="lbltext" class="label_otp">Please Enter a Valid Phone Number</label>
                     <br>
                     <img src="https://www.zoomcar.com/build/img/next-icon.5aaa7a34fca1e56685dfc1041338b9a2.svg" alt="next" id="next">
                     <!-- <input type="image" name="submit" src="https://www.zoomcar.com/build/img/next-icon.5aaa7a34fca1e56685dfc1041338b9a2.svg" alt="next" id="next"> -->
@@ -132,12 +132,12 @@
                         <input type="text" placeholder="Mobile number" id="phone1">
                         <input type="text" placeholder="Enter your Email" id="email">
                         <br>
-                        <label id="lbltext1" style="color: red; visibility: hidden;">Please Enter a  Valid Email</label>
+                        <label id="lbltext1" class="label_otp">Please Enter a  Valid Email</label>
                         <br>
                         <input type="text" placeholder="Name on Driving Licence" id="drive">
                         <input type="password" placeholder="Password(minimum 8 characters" id="min8">
                         <br>
-                        <label id="lbltext2" style="color: red; visibility: hidden;">Please Enter a  minmum 8 Character Password</label>
+                        <label id="lbltext2" class="label_otp">Please Enter a  minmum 8 Character Password</label>
                         <br>
                         <span id="message"></span>
                         <div id="login_submit_button">Sign Up</div>
