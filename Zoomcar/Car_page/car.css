@@ -1,3 +1,20 @@
+
+.nav_class{
+    font-size: 20px ; background-color: transparent;margin-top: 0px !important;
+}
+.nav_class_div{
+    height: -10px;margin-top: 0px;
+}
+
+.nav_img_a{
+    height: 35px;width: 100%;
+}
+.nav_img_child_a{height: 35px;width: 88%;}
+
+.nav_bar_cursor{
+    cursor: pointer;
+}
+
 body{
     background-color: rgb(239,239,239);
     margin: 0px;
@@ -25,6 +42,7 @@ body{
     background-color: #e4f1dc;
     color: rgb(238,90,87);
 }
+
 h2{
    margin: 0px;
 }
@@ -444,20 +462,10 @@ color: #9b9b9b;
 .float-r {
     float: right;
 }
-.dropbtn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-}
+
 /* Dropdown button */
 
-.dropdown {
-    float: left;
-    overflow: hidden;
-    margin: -12px 0px 0px 0px;
-}
+
 
 .dropdown .dropbtn {
     font-size: 16px;
@@ -739,7 +747,7 @@ form{
     float: right;
 }
 .dropbtn {
-    background-color: #04AA6D;
+    
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -748,7 +756,8 @@ form{
 .dropdown {
     float: left;
     overflow: hidden;
-    margin: -11px -13px 0px -9px !important;
+    font-size: 20px !important;
+    margin: -16px -13px 0px -9px !important;
 }
 
 .dropdown .dropbtn {
@@ -816,3 +825,7 @@ form{
 .with_fuel{
     background-color: rgb(247, 247, 247);
 }
+.nav_img{
+    height: 80%;width: 10% ;
+}
+
